@@ -9,7 +9,7 @@ module baud_rate_generator #
     input  wire i_reset,
     output wire o_tick
 );
-    // Contador modulo N: Nuestros datos = 631
+    // Contador modulo N: Nuestros datos = 651
     localparam integer N = CLK_FREQ / (BAUD_RATE * OVERSAMP);
     localparam integer WIDTH = $clog2(N);
 
